@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="assets/js/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Web Designer & Developer</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container max-w-7xl mx-auto">
+        <!-- Container with Image -->
+        <div class="relative bg-gray-100">
+
+            <!-- Navbar at the top, on the image -->
+            <div class="fixed top-0 left-1/2 transform -translate-x-1/2 w-1/2 px-4 py-3 text-white bg-black bg-opacity-60 shadow-lg z-50">
+                <nav class="flex justify-between items-center">
+                    <!-- Logo on the left -->
+                    <a href="#" class="text-bold text-white text-2xl">
+                        <img src="assets/image/f.png" alt="Logo" class="w-24 h-auto">
+                    </a>
+
+                    <!-- Hamburger menu for mobile -->
+                    <div class="md:hidden">
+                        <button class="text-white focus:outline-none" id="hamburger-menu">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+
+                    <!-- Navigation links -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="hover:text-gray-300">Services</a>
+                        <a href="#" class="hover:text-gray-300">Work</a>
+                        <a href="#" class="hover:text-gray-300">Blog</a>
+                        <a href="#" class="hover:text-gray-300">About</a>
+                        <a href="#" class="hover:text-gray-300">Pages</a>
+                    </div>
+
+                    <!-- Button on the right -->
+                    <a href="#" class="px-6 py-2 text-sm font-medium text-black bg-white rounded-lg hover:bg-gray-200">Let's Talk</a>
+                </nav>
+
+                <!-- Mobile menu (hidden by default) -->
+                <div class="md:hidden" id="mobile-menu" style="display:none;">
+                    <div class="space-y-4 mt-4">
+                        <a href="#" class="block text-white hover:text-gray-300">Services</a>
+                        <a href="#" class="block text-white hover:text-gray-300">Work</a>
+                        <a href="#" class="block text-white hover:text-gray-300">Blog</a>
+                        <a href="#" class="block text-white hover:text-gray-300">About</a>
+                        <a href="#" class="block text-white hover:text-gray-300">Pages</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <img class="w-full h-full object-cover h-screen" src="assets/image/sd.jpg" alt="Web Designer">
+
+            <!-- Text Content on Image -->
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-70 p-6">
+                <p class="text-4xl text-italic text-white italic">Web Designer</p>
+                <span class="text-2xl text-italic my-2 text-white italic">& AND</span>
+                <p class="text-4xl font-italic text-white italic">Developer</p>
+                <p class="text-xl font-italic my-2 text-white italic">
+                    A creative professional specializing in designing <br>the visual layout and user experience of websites.
+                </p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="absolute w-full flex justify-center space-x-12 sm:space-x-24 md:space-x-48 bg-transparent text-gray-400 text-4xl sm:text-5xl md:text-6xl">
+                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
+                    <i class="fa-brands fa-paypal"></i>
+                </div>
+                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
+                    <i class="fa-brands fa-threads"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Section -->
+        <div class="py-12 px-6 bg-black">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="max-w-sm p-6 bg-black bg-opacity-80 shadow-lg rounded-lg">
+                    <p class="text-gray-300">01</p>
+                    <a href="#">
+                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">WEB DESIGN</h3>
+                    </a>
+                    <p class="mb-3 text-white">Explore the latest trends in web design and how they are shaping the future of user experience.</p>
+                    <a href="#" class="inline-flex items-center justify-center mx-auto px-4 py-2 text-sm font-medium text-center text-white hover:text-gray-300">
+                        Read more
+                        <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="max-w-sm p-6 bg-black bg-opacity-80 shadow-lg rounded-lg">
+                    <p class="text-gray-300">02</p>
+                    <a href="#">
+                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">WEB DEVELOPMENT</h3>
+                    </a>
+                    <p class="mb-3 text-white">The impact of Artificial Intelligence on the tech industry and how it is reshaping the world of development.</p>
+                    <a href="#" class="inline-flex items-center justify-center mx-auto px-4 py-2 text-sm font-medium text-center text-white hover:text-gray-300">
+                        Read more
+                        <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="max-w-sm p-6 bg-black bg-opacity-80 shadow-lg rounded-lg">
+                    <p class="text-gray-300">03</p>
+                    <a href="#">
+                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">CONTENT & SEO</h3>
+                    </a>
+                    <p class="mb-3 text-white">Learn about the role of SEO and content marketing in driving organic traffic to your website.</p>
+                    <a href="#" class="inline-flex items-center justify-center mx-auto px-4 py-2 text-sm font-medium text-center text-white hover:text-gray-300">
+                        Read more
+                        <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburgerMenu.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+
+</html>
+
+
