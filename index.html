@@ -2,575 +2,776 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="assets/js/flowbite.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Web Designer & Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
-<body class="bg-black">
-    <div class="container max-w-5xl mx-auto">
-        <!-- Container with Image -->
-        <div class="relative bg-gray-100">
+<body class="bg-[#0E0E0E] text-[#EDD6B6] h-screen">
 
-            <!-- Navbar at the top, on the image -->
-            <div
-                class="fixed top-0 left-1/2 transform -translate-x-1/2 w-1/2 px-4 py-3 text-white bg-black bg-opacity-60 shadow-lg z-50">
-                <nav class="flex justify-between items-center">
-                    <!-- Logo on the left -->
-                    <a href="#" class="text-bold text-white text-2xl">
-                        <img src="assets/image/f.png" alt="Logo" class="w-24 h-auto">
-                    </a>
+  <!-- Centered Navigation Bar -->
+  <!-- Centered Navigation Bar -->
+  <div class="fixed w-full z-10 fixt flex items-center justify-center pt-8">
+    <nav
+      class="bg-black w-1/2 z-9  text-[#EDD6B6] py-3 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl shadow-lg">
+      <div class="container mx-auto flex items-center justify-between px-6">
+        <!-- Logo -->
+        <a href="#" class="text-2xl  text-[#EDD6B6]">arik.</a>
 
-                    <!-- Hamburger menu for mobile -->
-                    <div class="md:hidden">
-                        <button class="text-white focus:outline-none" id="hamburger-menu">
-                            <i class="fas fa-bars text-2xl"></i>
-                        </button>
-                    </div>
+        <!-- Navigation Links -->
+        <ul class="flex space-x-10 text-sm font-medium">
+          <li><a href="#" class="hover:text-gray-400 hover:underline">Services</a></li>
+          <li><a href="#" class="hover:text-gray-400 hover:underline">Work</a></li>
+          <li><a href="#" class="hover:text-gray-400 hover:underline">About</a></li>
+          <li><a href="#" class="hover:text-gray-400 hover:underline">Blog</a></li>
+        </ul>
 
-                    <!-- Navigation links -->
-                    <div class="hidden md:flex space-x-6">
-                        <a href="#" class="hover:text-gray-300">Services</a>
-                        <a href="#" class="hover:text-gray-300">Work</a>
-                        <a href="#" class="hover:text-gray-300">Blog</a>
-                        <a href="#" class="hover:text-gray-300">About</a>
-                        <a href="#" class="hover:text-gray-300">Pages</a>
-                    </div>
-
-                    <!-- Button on the right -->
-                    <a href="#"
-                        class="px-6 py-2 text-sm font-medium text-black bg-white rounded-lg hover:bg-gray-200">Let's
-                        Talk</a>
-                </nav>
-
-                <!-- Mobile menu (hidden by default) -->
-                <div class="md:hidden" id="mobile-menu" style="display:none;">
-                    <div class="space-y-4 mt-4">
-                        <a href="#" class="block text-white hover:text-gray-300">Services</a>
-                        <a href="#" class="block text-white hover:text-gray-300">Work</a>
-                        <a href="#" class="block text-white hover:text-gray-300">Blog</a>
-                        <a href="#" class="block text-white hover:text-gray-300">About</a>
-                        <a href="#" class="block text-white hover:text-gray-300">Pages</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image -->
-            <img class="w-full object-cover h-screen" src="assets/image/sd.jpg" alt="Web Designer">
-
-            <!-- Text Content on Image -->
-            <div
-                class="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-70 p-6">
-                <p class="text-4xl text-italic text-white italic">Web Designer</p>
-                <span class="text-2xl text-italic my-2 text-white italic">& AND</span>
-                <p class="text-4xl font-italic text-white italic">Developer</p>
-                <p class="text-xl font-italic my-2 text-white italic">
-                    A creative professional specializing in designing <br>the visual layout and user experience of
-                    websites.
-                </p>
-            </div>
-
-            <!-- Social Icons -->
-            <div
-                class="absolute w-full flex justify-center space-x-12 sm:space-x-24 md:space-x-48 bg-transparent text-gray-400 text-4xl sm:text-5xl md:text-6xl">
-                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
-                    <i class="fa-brands fa-google"></i>
-                </div>
-                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
-                    <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
-                    <i class="fa-brands fa-paypal"></i>
-                </div>
-                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
-                    <i class="fa-brands fa-figma"></i>
-                </div>
-                <div class="text-5xl hover:text-gray-400 transition-all duration-300">
-                    <i class="fa-brands fa-threads"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card Section -->
-        <div class="py-12 px-6 bg-black">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="max-w-sm p-6 bg-black bg-opacity-80 shadow-lg rounded-lg">
-                    <p class="text-gray-300">01</p>
-                    <a href="#">
-                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">WEB DESIGN</h3>
-                    </a>
-                    <p class="mb-3 text-white">Explore the latest trends in web design and how they are shaping the
-                        future of user experience.</p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center mx-auto px-4 py-2 text-sm font-medium text-center text-white hover:text-gray-300">
-                        Read more
-                        <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="max-w-sm p-6 bg-black bg-opacity-80 shadow-lg rounded-lg">
-                    <p class="text-gray-300">02</p>
-                    <a href="#">
-                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">WEB DEVELOPMENT</h3>
-                    </a>
-                    <p class="mb-3 text-white">The impact of Artificial Intelligence on the tech industry and how it is
-                        reshaping the world of development.</p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center mx-auto px-4 py-2 text-sm font-medium text-center text-white hover:text-gray-300">
-                        Read more
-                        <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="max-w-sm p-6 bg-black bg-opacity-80 shadow-lg rounded-lg">
-                    <p class="text-gray-300">03</p>
-                    <a href="#">
-                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-white">CONTENT & SEO</h3>
-                    </a>
-                    <p class="mb-3 text-white">Learn about the role of SEO and content marketing in driving organic
-                        traffic to your website.</p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center mx-auto px-4 py-2 text-sm font-medium text-center text-white hover:text-gray-300">
-                        Read more
-                        <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <!-- Call-to-Action Button -->
+        <a href="#" class="bg-[#EDD6B6] text-black text-[12px] font-semibold rounded-sm px-4 py-2  hover:bg-[#FBD9B9]">
+          LET'S TALK
+        </a>
+      </div>
+    </nav>
+  </div>
 
 
 
-        <!-- Additional Image Section Below the Cards -->
-        <div class="container mx-auto bg-black py-12">
-            <div class="text-center">
-                <p class="font-bold text-xl text-white italic">SELECTED WORK</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-                <div class="col-span-2 h-96 relative">
-                    <img src="assets/image/rose.jpg" alt="Additional Image"
-                        class="w-full h-full object-cover rounded-lg shadow-lg">
-
-                    <!-- Overlay text placed at the bottom with space between items -->
-                    <div
-                        class="absolute bottom-10 left-10 right-10 w-[80%] p-2 bg-opacity-50 bg-black text-white flex justify-between items-center">
-                        <ul class="flex w-full justify-between">
-                            <li class="text-lg">Space</li>
-                            <li class="text-lg">WebDesign</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-span-2 h-96 relative">
-                    <img src="assets/image/Ai.webp" alt="Additional Image"
-                        class="w-full h-full object-cover rounded-lg shadow-lg">
-
-                    <!-- Overlay text placed at the bottom with space between items -->
-                    <div
-                        class="absolute bottom-10 left-10 right-10 w-[80%] p-2 bg-opacity-50 bg-black text-white flex justify-between items-center">
-                        <ul class="flex w-full justify-between">
-                            <li class="text-lg">Ai System</li>
-                            <li class="text-lg">WebDesign</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-span-2 h-96 relative">
-                    <img src="assets/image/b.avif" alt="Additional Image"
-                        class="w-full h-full object-cover rounded-lg shadow-lg">
-
-                    <!-- Overlay text placed at the bottom with space between items -->
-                    <div
-                        class="absolute bottom-10 left-10 right-10 w-[80%] p-2 bg-opacity-50 bg-black text-white flex justify-between items-center">
-                        <ul class="flex w-full justify-between">
-                            <li class="text-lg">Gadget</li>
-                            <li class="text-lg">WebDesign</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-span-2 h-96 relative">
-                    <img src="assets/image/fl.jpg" alt="Additional Image"
-                        class="w-full h-full object-cover rounded-lg shadow-lg">
-
-                    <!-- Overlay text placed at the bottom with space between items -->
-                    <div
-                        class="absolute bottom-10 left-10 right-10 w-[80%] p-2 bg-opacity-50 bg-black text-white flex justify-between items-center">
-                        <ul class="flex w-full justify-between">
-                            <li class="text-lg">Space</li>
-                            <li class="text-lg">WebDesign</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="flex justify-center items-center">
-            <a href="#" class="block max-w-sm my-12 p-6 bg-gray-900 rounded-lg ">
-                <p class="font-semibold text-sm text-white text-center">The Process</p>
-                <h5 class="mb-2 font-semibold text-6xl tracking-tight text-white dark:text-white italic">Your Website in
-                    5 Steps</h5>
-                <p class="font-semibold text-sm text-white">Our Website ensure that we create a website tailored to your
-                    business needs.</p>
-            </a>
-        </div>
-
-
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4">
-            <!-- Card 1: Left side -->
-            <div class="col-span-1">
-                <a href="#" class="block max-w-sm p-6 bg-gray-900 rounded-lg shadow-lg hover:bg-gray-800">
-                    <!-- Section Title -->
-                    <p class="font-normal text-sm text-white mb-2">The Process</p>
-
-                    <!-- Main Heading -->
-                    <h5 class="mb-4 font-semibold text-xl text-white italic">Discovery Call</h5>
-
-                    <!-- Description -->
-                    <p class="font-normal text-sm text-white mb-4">Our website ensures that we create a website tailored
-                        to your business needs.</p>
-
-                    <!-- List of Steps or Features -->
-                    <ul class="text-white text-sm space-y-2 list-decimal ml-4">
-                        <li>Understanding your needs</li>
-                        <li>Planning the project</li>
-                        <li>Design and development</li>
-                        <li>Testing and launch</li>
-                    </ul>
-                </a>
-            </div>
-
-            <!-- Card 2: Right side -->
-            <div class="col-span-1">
-                <a href="#" class="block max-w-sm p-6 mt-48 bg-gray-900 rounded-lg shadow-lg hover:bg-gray-800">
-                    <!-- Section Title -->
-                    <p class="font-normal text-sm text-white mb-2">The Process</p>
-
-                    <!-- Main Heading -->
-                    <h5 class="mb-4 font-semibold text-xl text-white italic">Discovery Call</h5>
-
-                    <!-- Description -->
-                    <p class="font-normal text-sm text-white mb-4">Our website ensures that we create a website tailored
-                        to your business needs.</p>
-
-                    <!-- List of Steps or Features -->
-                    <ul class="text-white text-sm space-y-2 list-decimal ml-4">
-                        <li>Understanding your needs</li>
-                        <li>Planning the project</li>
-                        <li>Design and development</li>
-                        <li>Testing and launch</li>
-                    </ul>
-                </a>
-            </div>
-
-            <div class="col-span-1">
-                <a href="#" class="block max-w-sm p-6 bg-gray-900 rounded-lg shadow-lg hover:bg-gray-800">
-                    <!-- Section Title -->
-                    <p class="font-normal text-sm text-white mb-2">The Process</p>
-
-                    <!-- Main Heading -->
-                    <h5 class="mb-4 font-semibold text-xl text-white italic">Discovery Call</h5>
-
-                    <!-- Description -->
-                    <p class="font-normal text-sm text-white mb-4">Our website ensures that we create a website tailored
-                        to your business needs.</p>
-
-                    <!-- List of Steps or Features -->
-                    <ul class="text-white text-sm space-y-2 list-decimal ml-4">
-                        <li>Understanding your needs</li>
-                        <li>Planning the project</li>
-                        <li>Design and development</li>
-                        <li>Testing and launch</li>
-                    </ul>
-                </a>
-            </div>
-
-            <!-- Card 2: Right side -->
-            <div class="col-span-1">
-                <a href="#" class="block max-w-sm p-6 mt-48 bg-gray-900 rounded-lg shadow-lg hover:bg-gray-800">
-                    <!-- Section Title -->
-                    <p class="font-normal text-sm text-white mb-2">The Process</p>
-
-                    <!-- Main Heading -->
-                    <h5 class="mb-4 font-semibold text-xl text-white italic">Discovery Call</h5>
-
-                    <!-- Description -->
-                    <p class="font-normal text-sm text-white mb-4">Our website ensures that we create a website tailored
-                        to your business needs.</p>
-
-                    <!-- List of Steps or Features -->
-                    <ul class="text-white text-sm space-y-2 list-decimal ml-4">
-                        <li>Understanding your needs</li>
-                        <li>Planning the project</li>
-                        <li>Design and development</li>
-                        <li>Testing and launch</li>
-                    </ul>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- title -->
-        <div class="flex justify-center items-center">
-            <a href="#" class="block max-w-lg my-12 p-6 rounded-lg shadow-lg hover:bg-gray-900 transition-all duration-100">
-                
-                <!-- Heading Section -->
-                <h5 class="font-semibold text-2xl sm:text-3xl lg:text-4xl text-center tracking-tight text-white italic mb-4">
-                    What's My 
-                </h5>
-                <h1 class="font-semibold text-2xl sm:text-3xl lg:text-4xl text-center tracking-tight text-white italic mb-4">
-                    Clients Say
-                </h1>
-                
-                <!-- Description -->
-                <p class="font-normal text-sm sm:text-base text-white text-center sm:text-justify italic">
-                    See what my clients have to say and what they achieve by working with me.
-                </p>
-            </a>
-        </div>
-
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
-    
-        <!-- Card 1 -->
-        <div class="col-span-1">
-            <a href="#" class="block p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-cogs text-white text-3xl mr-4"></i>
-                    <h5 class="font-semibold text-xl text-white">Amazing Results with Fahim Premium WebDesign Services</h5>
-                </div>
-                <p class="font-normal text-sm text-white mb-4">We tailor websites to your unique business needs to ensure optimal performance and design.</p>
-                <!-- Author Section -->
-                <div class="mt-4 text-white">
-                    <p class="font-semibold text-sm">John Dee</p>
-                    <p class="text-xs">Founder & CEO</p>
-                </div>
-            </a>
-        </div>
-    
-        <!-- Card 2 -->
-        <div class="col-span-1">
-            <a href="#" class="block p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-paint-brush text-white text-3xl mr-4"></i>
-                    <h5 class="font-semibold text-xl text-white">Web Design nd Devolopment with Fahim: Second to None</h5>
-                </div>
-                <p class="font-normal text-sm text-white mb-4">Expert web design solutions that ensure your business stands out in the digital landscape.</p>
-                <!-- Author Section -->
-                <div class="mt-4 text-white">
-                    <p class="font-semibold text-sm">Jane Doe</p>
-                    <p class="text-xs">Creative Director</p>
-                </div>
-            </a>
-        </div>
-    
-        <!-- Card 3 -->
-        <div class="col-span-1">
-            <a href="#" class="block p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-users-cog text-white text-3xl mr-4"></i>
-                    <h5 class="font-semibold text-xl text-white">Professional Collaborative Web Design with Fahim</h5>
-                </div>
-                <p class="font-normal text-sm text-white mb-4">Work with professionals to create a collaborative, intuitive, and user-centric website.</p>
-                <!-- Author Section -->
-                <div class="mt-4 text-white">
-                    <p class="font-semibold text-sm">Alex Roe</p>
-                    <p class="text-xs">Lead Designer</p>
-                </div>
-            </a>
-        </div>
-    
-        <!-- Card 4 -->
-        <div class="col-span-1">
-            <a href="#" class="block p-6 bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-bullhorn text-white text-3xl mr-4"></i>
-                    <h5 class="font-semibold text-xl text-white">Web Design Content that Stands Out from the Crowd</h5>
-                </div>
-                <p class="font-normal text-sm text-white mb-4">Create content that not only speaks to your audience but captivates them through design.</p>
-                <!-- Author Section -->
-                <div class="mt-4 text-white">
-                    <p class="font-semibold text-sm">John Dee</p>
-                    <p class="text-xs">Founder & CEO</p>
-                </div>
-            </a>
-        </div>
-    
-    </div>
-
-
-
+  <!-- Hero Section -->
+  <section class="text-center py-6">
     <div class="relative">
-        <img class="w-full object-cover h-screen" src="assets/image/sd.jpg" alt="Web Designer">
-
-        <!-- Text Content on Image -->
-        <div
-            class="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-70 p-8">
-
-            <!-- Title Section -->
-            <div class="flex flex-col md:flex-row justify-center items-center w-full mt-24 space-y-4 md:space-y-0">
-                <!-- Left Title -->
-                <div class="flex justify-center items-center w-full md:w-1/2">
-                    <h1 class="text-4xl md:text-6xl font-bold tracking-wide text-center md:text-left">Web Designer
-                    </h1>
-                </div>
-
-                <!-- Right Title -->
-                <div class="flex justify-center items-center w-full md:w-1/2 mt-2 md:mt-0">
-                    <h2 class="text-4xl md:text-6xl font-bold tracking-wide text-center md:text-right">Developer
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Description Section: Two Cards Layout -->
-            <div class="flex flex-col md:flex-row w-full justify-between gap-8 mt-16 md:mt-32 max-w-6xl mx-auto">
-                <!-- Left Card -->
-                <div class="flex-1 bg-transparent p-8 rounded-xl shadow-xl ">
-                    <p class="text-xl italic text-center md:text-left mt-6">
-                        A creative professional specializing in designing <br> the visual layout and user experience
-                        of websites.
-                    </p>
-                </div>
-
-                <!-- Right Card -->
-                <div class="flex-1 bg-transparent p-8 rounded-xl shadow-xl">
-                    <p class="text-l italic text-center md:text-left">
-                        Hi, I am Fahim. I am a freelancer specializing in web design and development. I am
-                        passionate about SEO services and have extensive experience in helping businesses grow
-                        online. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ea?
-                    </p>
-                </div>
-            </div>
+      <img src="https://framerusercontent.com/images/sitQqXXWe18lNYFUMPSXSHcM3A.png?scale-down-to=1024" alt="Hero Image"
+        class="mx-auto w-[38%]">
+      <div class=" inset-0 flex flex-col items-center justify-center">
+        <spen class="text-7xl md:text-8xl lg:text-9xl font-thin mb-4">
+          Web Designer <br><span class="italic"> & Developer</spen>
+        </spen>
+        <p class=" max-w-2xl mx-auto py-4 font-[10] text-2xl mb-8">
+          Premium Web Design, Development, and SEO services <br> to help your business stand out.
+        </p>
+        <div class="flex gap-2  px-4 py-3 rounded">
+          <svg class="w-6 h-6 text-[#EDD6B6]  border border-white rounded-full hover:bg-[#EDD6B6] hover:bg-opacity-30"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 19V5m0 14-4-4m4 4 4-4" />
+          </svg>
+          <a href="#" class="">
+            My Services
+          </a>
         </div>
+      </div>
     </div>
+  </section>
+
+  <!-- My services section  -->
+  <section class="container mx-auto py-16 px-8 overflow-hidden">
+    <div class="flex gap-24 text-6xl ">
+      <i class="fa-solid fa-wand-magic-sparkles "></i>
+      <i class="fa-solid fa-hippo"></i>
+      <i class="fa-solid fa-truck-fast"></i>
+      <i class="fa-brands fa-slack"></i>
+      <i class="fa-solid fa-mug-hot"></i>
+      <i class="fa-brands fa-docker"></i>
+      <i class="fa-brands fa-stack-overflow"></i>
+      <i class="fa-brands fa-dropbox"></i>
+      <i class="fa-solid fa-bicycle"></i>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container mx-auto py-4 font-[2] px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Web Design Card -->
+      <div class="bg-gray-800 p-6 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl">
+        <p class="font-[10]">01</p>
+        <h3 class="text-xl font-semibold mb-4">Web Design</h3>
+        <p class="text-[#EDD6B6] mb-4">
+          Visually stunning web designs that captivate your audience by blending your brand vision and customer needs.
+        </p>
+        <div class="group flex gap-2 ">
+          <svg
+            class=" w-6 h-6 text-[#EDD6B6] hidden group-hover:block border border-white rounded-full hover:bg-[#EDD6B6] hover:bg-opacity-30"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+
+          <svg class="w-6 h-6 text-[#EDD6B6] block group-hover:hidden border border-white rounded-full "
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6v13m0-13 4 4m-4-4-4 4" />
+          </svg>
+          <a href="#" class="text-[#EDD6B6] hover:underline">About Web Design</a>
+        </div>
+      </div>
+
+      <!-- Development Card -->
+      <div class="bg-gray-800 p-6 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl ">
+        <p class="font-[10]">02</p>
+        <h3 class="text-xl font-semibold mb-4">Development</h3>
+        <p class="text-[#EDD6B6] mb-4">
+          Get custom web development solutions that address your organization’s needs, designed to deliver a flawless
+          user experience.
+        </p>
+        <div class="group flex gap-2 ">
+          <svg
+            class=" w-6 h-6 text-[#EDD6B6] hidden group-hover:block border border-white rounded-full hover:bg-[#EDD6B6] hover:bg-opacity-30"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+
+          <svg class="w-6 h-6 text-[#EDD6B6] block group-hover:hidden border border-white rounded-full"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6v13m0-13 4 4m-4-4-4 4" />
+          </svg>
+          <a href="#" class="text-[#EDD6B6] hover:underline">About Development</a>
+        </div>
+
+      </div>
+
+      <!-- Content & SEO Card -->
+      <div class="bg-gray-800 p-6 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl">
+        <p class="font-[10]">03</p>
+        <h3 class="text-xl font-semibold mb-4">Content & SEO</h3>
+        <p class="text-[#EDD6B6] mb-4">
+          Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search
+          results.
+        </p>
+        <div class="group flex gap-2 ">
+          <svg
+            class=" w-6 h-6 text-[#EDD6B6] hidden group-hover:block border border-white rounded-full hover:bg-[#EDD6B6] hover:bg-opacity-30"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+
+          <svg class="w-6 h-6 text-[#EDD6B6] block group-hover:hidden border border-white rounded-full"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6v13m0-13 4 4m-4-4-4 4" />
+          </svg>
+
+          <a href="#" class="text-[#EDD6B6] hover:underline">About SEO</a>
+        </div>
 
 
-    
+      </div>
+    </div>
+  </section>
 
-    <div class="relative">
-        <img class="w-full object-cover h-screen" src="assets/image/sd.jpg" alt="Web Designer">
+  <!-- selected work  -->
+  <section class="container mx-auto  my-24">
+    <div class="text-[#EDD6B6] text-5xl font-thin p-12 ">
+      <span>Selected Work</span>
+    </div>
+    <div class="grid grid-cols-1  md:grid-cols-2  gap-8">
+      <div class="relative  hover:shadow-xl hover:shadow-white group rounded-2xl ">
+        <!-- Image -->
+        <img class="h-full w-full rounded-2xl" src="img/a.jpg" alt="Image not found">
 
-        <!-- Overlay Content -->
-        <div
-            class="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-70 p-8">
+        <!-- SVG Icon -->
+        <div class="absolute top-[44%] left-[48%] z-10 hidden group-hover:block">
+          <svg
+            class="w-10 h-10 text-[#EDD6B6] border border-[#EDD6B6] rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl transform rotate-0 transition-transform duration-700 delay-300 group-hover:rotate-[-45deg]"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </div>
+        <!-- Caption -->
+        <div class="absolute w-full flex bottom-10 justify-center px-6 ">
+          <div
+            class="w-full flex justify-between bg-gray-800 py-2 px-8 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl rounded-md">
+            <span class="text-2xl font-thin">Space</span>
+            <span class="text-lg font-thin">WEB DESIGN</span>
+          </div>
+        </div>
+      </div>
 
-            <!-- "Project in Mind?" Text -->
-            <p class="text-sm font-normal text-center mb-4 md:mb-8">Project in Mind?</p>
+      <div class="relative hover:shadow-xl hover:shadow-white rounded-2xl group">
+        <!-- Image -->
+        <img class="h-full w-full rounded-2xl" src="img/b.jpg" alt="Image not found">
 
-            <!-- Main Headline -->
-            <p class="text-4xl md:text-7xl font-semibold text-center italic mb-4">Let's make our</p>
-            <p class="text-4xl md:text-7xl font-semibold text-center italic mb-4">Website Shine</p>
+        <!-- SVG Icon -->
+        <div class="absolute top-[44%] left-[48%] z-10 hidden group-hover:block">
+          <svg
+            class="w-10 h-10 text-[#EDD6B6] border border-[#EDD6B6] rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl transform rotate-0 transition-transform duration-700 delay-300 group-hover:rotate-[-45deg]"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </div>
+        <!-- Caption -->
+        <div class="absolute w-full flex bottom-10 justify-center px-6">
+          <div
+            class="w-full flex justify-between bg-gray-800 py-2 px-8 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl rounded-md">
+            <span class="text-2xl font-thin">Nova</span>
+            <span class="text-lg font-thin">WEB DESIGN</span>
+          </div>
+        </div>
+      </div>
 
-            <!-- Subheading -->
-            <p class="text-xl md:text-xl font-italic text-center my-2">
-                Premium Web Design, Webflow, SEO Services to <br> help your business stand out
+      <div class="relative hover:shadow-xl hover:shadow-white group  rounded-2xl">
+        <!-- Image -->
+        <img class="h-full w-full rounded-2xl" src="img/c.jpg" alt="Image not found">
+
+        <!-- SVG Icon -->
+        <div class="absolute top-[44%] left-[48%] z-10 hidden group-hover:block">
+          <svg
+            class="w-10 h-10 text-[#EDD6B6] border border-[#EDD6B6] rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl transform rotate-0 transition-transform duration-700 delay-300 group-hover:rotate-[-45deg]"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </div>
+        <!-- Caption -->
+        <div class="absolute w-full flex bottom-10 justify-center px-6">
+          <div
+            class="w-full flex justify-between bg-gray-800 py-2 px-8 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl rounded-md">
+            <span class="text-2xl font-thin">Sonic</span>
+            <span class="text-lg font-thin">WEB DESIGN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative hover:shadow-xl hover:shadow-white group rounded-2xl ">
+        <!-- Image -->
+        <img class="h-full w-full  rounded-2xl" src="img/h.jpg" alt="Image not found">
+
+        <!-- SVG Icon -->
+        <div class="absolute top-[44%] left-[48%] z-10 hidden group-hover:block">
+          <svg
+            class="w-10 h-10 text-[#EDD6B6] border border-[#EDD6B6] rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl transform rotate-0 transition-transform duration-700 delay-300 group-hover:rotate-[-45deg]"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 12H5m14 0-4 4m4-4-4-4" />
+          </svg>
+        </div>
+        <!-- Caption -->
+        <div class="absolute w-full flex bottom-10 justify-center px-6">
+          <div
+            class="w-full flex justify-between bg-gray-800 py-2 px-8 border border-[#34312C] bg-stone-800/50 backdrop-blur-xl rounded-md">
+            <span class="text-2xl font-thin">Solar</span>
+            <span class="text-lg font-thin">WEB DESIGN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the process start -->
+  <section>
+    <div class="container max-w-7xl mx-auto mt-20">
+      <div class="flex flex-col justify-items-center text-white text-center">
+        <span class="text-lg ">THE PROCESS</span>
+        <span class="text-5xl mb-4">Your Website</span>
+        <span class="text-4xl mb-4 italic"> in 5 steps</span>
+        <span class="text-xl ">Our process ensures that we create a website</span>
+        <span class="text-xl ">tailored to your business needs.</span>
+      </div>
+      <!-- step main start -->
+      <div class="flex justify-items-center mt-12">
+        <!-- left side start -->
+        <div class="grid grid-row-5 justify-items-center p-6 gap-2 ">
+          <!-- step-1 -->
+          <div class="shadow-lg rounded-lg max-w-xl mx-auto p-4 border h-96">
+            <div class="flex items-center justify-end mb-4 text-white">
+              <span class="bgb font-medium px-4 py-2 rounded-lg">2 HOURS</span>
+            </div>
+            <h2 class="text-lg">Do we Match?</h2>
+            <h3 class="text-2xl font-semibold ">Discovery Call</h3>
+            <div class="rounded-md mb-4 pt-4">
+              <p class="text-sm">Before we start, we determine if and how I can help you. What are your
+                requirements for your new website? Why do you need a new website? What goals do you
+                have, and what problems can we solve with a new website?</p>
+            </div>
+            <ul class="list-disc list-inside">
+              <li>We get to know each other better</li>
+              <li>Determine how I can best assist you</li>
+              <li>Understand the goals you have for your website</li>
+            </ul>
+          </div>
+          <!-- empty div -->
+          <div class="h-96">
+            <p class=""></p>
+          </div>
+          <!-- step 3 -->
+          <div class="shadow-lg rounded-lg max-w-xl mx-auto p-4 border h-96">
+            <div class="flex items-center justify-end mb-4 text-white">
+              <span class="bgb font-medium px-4 py-2 rounded-lg">2 WEEKS</span>
+            </div>
+            <h2 class="text-lg">Some Magic</h2>
+            <h3 class="text-2xl font-semibold ">Web Design</h3>
+            <div class="pt-4 rounded-md mb-4">
+              <p class="text-sm">Now comes the magic. Based on the previously developed concept, I create
+                a high-end screen design perfectly tailored to your brand. A web design that sets you
+                apart from your competition, fits your target audience ideally, and provides an
+                excellent user experience.</p>
+            </div>
+            <ul class="list-disc list-inside">
+              <li>High-end web design tailored to your brand</li>
+              <li>Interactive prototype of the design</li>
+            </ul>
+          </div>
+          <!-- empty div -->
+          <div class="h-96">
+            <p class=""></p>
+          </div>
+          <!-- step 5 -->
+          <div class="shadow-lg rounded-lg max-w-xl mx-auto p-4 border h-96">
+            <div class="flex items-center justify-end mb-4 text-white">
+              <span class="bgb font-medium px-4 py-2 rounded-lg">1 DAY</span>
+            </div>
+            <h2 class="text-lg">Ready to go</h2>
+            <h3 class="text-2xl font-semibold ">Website Onboarding</h3>
+            <div class="pt-4 rounded-md mb-4">
+              <p class="text-sm">In a personal Framer workshop, I will show you how to make changes to
+                your new website quickly and easily. Additionally, you will receive personalized Framer
+                video tutorials that you can access at any time. Edit your Framer website without a
+                complicated backend or the need for an additional programmer. It's as simple as that</p>
+            </div>
+            <ul class="list-disc list-inside">
+              <li>Personal workshop</li>
+              <li> Personalized video tutorials</li>
+              <li>Edit text and images directly on your website</li>
+            </ul>
+          </div>
+        </div>
+        <!-- this is middle step numver-->
+        <div class="grid grid-row-5 justify-items-center items-center">
+          <div class="mt-8">
+            <p class="px-4 py-2 bg-white text-black text-center rounded-full">1</p>
+          </div>
+          <div class="mt-8">
+            <p class="px-4 py-2 bg-white text-black text-center rounded-full">2</p>
+          </div>
+          <div class="mt-8">
+            <p class="px-4 py-2 bg-white text-black text-center rounded-full">3</p>
+          </div>
+          <div class="mt-8">
+            <p class="px-4 py-2 bg-white text-black text-center rounded-full">4</p>
+          </div>
+          <div class="mt-8">
+            <p class="px-4 py-2 bg-white text-black text-center rounded-full">5</p>
+          </div>
+        </div>
+        <!-- Right side start -->
+        <div class="grid grid-row-5 justify-items-center p-6 gap-2 ">
+          <!-- empty div -->
+          <div class="h-96">
+            <p class=""></p>
+          </div>
+          <!-- step-2 -->
+          <div class="shadow-lg rounded-lg max-w-xl mx-auto p-4 border h-96">
+            <div class="flex items-center justify-end mb-4 text-white">
+              <span class="bgb font-medium px-4 py-2 rounded-lg">2 WEEKS</span>
+            </div>
+            <h2 class="text-lg">We need a plan</h2>
+            <h2 class="text-2xl font-bold mb-4">Concept & Strategy</h2>
+            <p class="mb-4">
+              Together, we develop a strategy that successfully combines your goals with the needs of your
+              target audience. Based on this concept, I create the first wireframes and an interactive
+              prototype. This provides us with a very good impression of the website and the user
+              interface.
             </p>
-            <a href="#"
-                class="inline-flex items-center justify-center mx-auto px-4 py-2 bg-white text-sm font-medium text-center text-black hover:text-gray-300">
-                Get in Touch
-                <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 14 10" aria-label="Arrow icon indicating navigation">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-            </a>
+            <ul class="list-disc list-inside ">
+              <li>UX Design</li>
+              <li>Wireframes</li>
+              <li>Interactive Prototype</li>
+            </ul>
+          </div>
+          <!-- empty div -->
+          <div class="h-96">
+            <p class=""></p>
+          </div>
+          <!-- step 4 -->
+          <div class="shadow-lg rounded-lg max-w-xl mx-auto p-4 border h-96">
+            <div class="flex items-center justify-end mb-4 text-white">
+              <span class="bgb font-medium px-4 py-2 rounded-lg">2 WEEKS</span>
+            </div>
+            <h2 class="text-lg">More Magic</h2>
+            <h3 class="text-2xl font-semibold ">Web Development</h3>
+            <div class="pt-4 rounded-md mb-4">
+              <p class="text-sm">In this step, we breathe life into your new high-end design. You will
+                receive a custom-built website using a modular web design system and CMS integration.
+                Animations will add the necessary flair to your site and set you apart from the boring
+                competition./p>
+            </div>
+            <ul class="list-disc list-inside">
+              <li>Custom framer website.</li>
+              <li>Modular web design systems</li>
+              <li>CMS integration</li>
+            </ul>
+          </div>
+          <!-- empty div -->
+          <div class="h-96">
+            <p class=""></p>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- the process end -->
+
+  <!-- Testimonial starts  -->
+  <div class="space-y-5  w-10/12 mx-auto">
+    <div class="text-center my-8">
+      <h1 class="text-8xl font-font-raleway text-[#DAC5A7]">What My<br>
+        Clients Say</h1>
+      <h3 class="text-xl font-light text-[#DAC5A7] mt-4">
+        See what my clients have to say about working with me<br>
+        and the results I helped them achieve.
+      </h3>
     </div>
 
-    <!-- Footer Section -->
-    <div class="bg-black bg-opacity-80 text-white py-10">
-        <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-            <!-- Section 1: Personal Links -->
-            <div class="space-y-4">
-                <p class="text-lg font-semibold">Fahim</p>
-                <div class="flex flex-col space-y-2">
-                    <a href="" class="hover:text-gray-400">FaceBook</a>
-                    <a href="" class="hover:text-gray-400">Twitter</a>
-                    <a href="" class="hover:text-gray-400">WhatsApp</a>
-                    <a href="" class="hover:text-gray-400">Dribble</a>
-                    <a href="" class="hover:text-gray-400">YouTube</a>
-                </div>
-            </div>
+    <div>
+      <div class="flex">
+        <div class="w-[550px] h-[360px] mx-10 rounded-lg border border-gray-800 shadow-md backdrop-blur-lg">
+          <svg class="w-20 h-10 pt-16 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z" />
+          </svg>
+          <p class="text-2xl font-semibold text-[#EDD6B6] px-8 pt-1">Amazing Results with Arik's Premium Web Design
+            Services.</p>
+          <p class="text-md text-[#EDD6B6] mt-2 px-8">
+            Agun is a top-notch web designer who created a stunning website for my business. He was attentive to my
+            needs
+            and provided excellent customer service throughout the entire process. I highly recommend his services.
+          </p>
+          <div class="flex pt-8 pl-8">
+            <img class="w-14 rounded-full" decoding="async"
+              src="https://framerusercontent.com/images/pVYu13FxMlhwfyvEdfvytUjLipo.png" alt="">
+            <div>
+              <p class="text-[#DAC5A7] pt-2 pl-4">MATTHEW<br>Sonic</p>
 
-            <!-- Section 2: Pages -->
-            <div class="space-y-4">
-                <p class="text-lg font-semibold">Pages</p>
-                <div class="flex flex-col space-y-2">
-                    <a href="" class="hover:text-gray-400">Home</a>
-                    <a href="" class="hover:text-gray-400">Services</a>
-                    <a href="" class="hover:text-gray-400">About</a>
-                    <a href="" class="hover:text-gray-400">Contact</a>
-                </div>
             </div>
-
-            <!-- Section 3: CMS -->
-            <div class="space-y-4">
-                <p class="text-lg font-semibold">CMS</p>
-                <div class="flex flex-col space-y-2">
-                    <a href="" class="hover:text-gray-400">Work</a>
-                    <a href="" class="hover:text-gray-400">Work Single</a>
-                    <a href="" class="hover:text-gray-400">Blog</a>
-                    <a href="" class="hover:text-gray-400">Blog Post</a>
-                </div>
-            </div>
-
-            <!-- Section 4: Utility Process -->
-            <div class="space-y-4">
-                <p class="text-lg font-semibold">Utility Process</p>
-                <div class="flex flex-col space-y-2">
-                    <a href="" class="hover:text-gray-400">404 Error Page</a>
-                    <a href="" class="hover:text-gray-400">Password Protected</a>
-                    <a href="" class="hover:text-gray-400">Style Guide</a>
-                    <a href="" class="hover:text-gray-400">Licensing</a>
-                    <a href="" class="hover:text-gray-400">ChangeLog</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="w-[550px] h-[360px] mx-10 rounded-lg border border-gray-800 shadow-md">
+          <svg class="w-20 h-10 pt-16 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z" />
+          </svg>
+          <p class="text-2xl font-semibold text-[#EDD6B6] px-8 pt-1">Expert Framer and SEO Services: Excellent Work,
+            Great
+            Results.</p>
+          <p class="text-md text-[#EDD6B6] mt-2 px-8">
+            Working with Arik on my website redesign was a fantastic experience. He was able to take my vision and turn
+            it
+            into a beautiful and functional website. His attention to detail and creative approach is unmatched. I
+            couldn't be happier with the end result.
+          </p>
+          <div class="flex pt-8 pl-8">
+            <img class="w-14 rounded-full" decoding="async"
+              src="https://framerusercontent.com/images/ukScHlXY6INnNtfLKEBZ9RdVDk.png" alt="">
+            <div>
+              <p class="text-[#DAC5A7] pt-2 pl-4">JHON KIM<br>Sonic</p>
 
-        <!-- Footer Bottom Section (Optional) -->
-        <div class="mt-10 text-center text-sm text-gray-400">
-            <p>&copy; 2024 Fahim. All rights reserved.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    
-    
-    
 
 
+    <div>
+      <div class="flex">
+        <div class="w-[550px] h-[360px] mx-10 rounded-lg border border-gray-800 shadow-md">
+          <svg class="w-20 h-10 pt-16 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z" />
+          </svg>
+          <p class="text-2xl font-semibold text-[#EDD6B6] px-8 pt-1">Professional, Collaborative Web Design Experience
+            with Agun.</p>
+          <p class="text-md text-[#EDD6B6] mt-2 px-8">
+            I had the pleasure of working with Arik on a website development project and was blown away by his expertise
+            and professionalism. He made the process seamless and delivered a website that exceeded our expectations. I
+            highly recommend Arik for all your web development needs.
+          </p>
+          <div class="flex pt-8 pl-8">
+            <img class="w-14 rounded-full" decoding="async"
+              src="https://framerusercontent.com/images/SnWxxAAjflHRkgTOyIn0B79TXA.png" alt="">
+            <div>
+              <p class="text-xs text-[#DAC5A7] pt-2 pl-4">Andrea Lee<br>Sonic</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[550px] h-[360px] mx-10 rounded-lg border border-gray-800 shadow-md">
+          <svg class="w-20 h-10 pt-16 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z" />
+          </svg>
+          <p class="text-2xl font-semibold text-[#EDD6B6] px-8 pt-1">Expertise in Web Design: Second to None with Agun.
+          </p>
+          <p class="text-md text-[#EDD6B6] mt-2 px-8">
+            Agun is not only an exceptional web designer, but also a pleasure to work with. He took the time to
+            understand
+            my business and its unique needs, and created a website that perfectly represents my brand. I highly
+            recommend
+            Arik's services to anyone looking for a top-quality web designer.
+          </p>
+          <div class="flex pt-8 pl-8">
+            <img class="w-14 rounded-full" decoding="async"
+              src="https://framerusercontent.com/images/zNKO2RYDIlDQdbemjjkeR8spts.png" alt="">
+            <div>
+              <p class="text-xs text-[#DAC5A7] pt-2 pl-4">Andreas Thompson<br>Design Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div>
+      <div class="flex">
+        <div class="w-[550px] h-[360px] mx-10 rounded-lg border border-gray-800 shadow-md">
+          <svg class="w-20 h-10 pt-16 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z" />
+          </svg>
+          <p class="text-2xl font-semibold text-[#EDD6B6] px-8 pt-1">Web Design and Content Solutions: Stand Out from
+            the
+            Crowd.</p>
+          <p class="text-md text-[#EDD6B6] mt-2 px-8">
+            Agun's SEO services have helped my business improve its online presence and increase traffic to our website.
+            He is knowledgeable, professional, and provides excellent results. I highly recommend him for all your SEO
+            needs.
+          </p>
+          <div class="flex pt-8 pl-8">
+            <img class="w-14 rounded-full" decoding="async"
+              src="https://framerusercontent.com/images/zNKZ69PpLDt3Xz9CbISW4JZIdJg.png" alt="h">
+            <div>
+              <p class="text-xs text-[#DAC5A7] pt-2 pl-4">Catharine Davis<br>Supersonic</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[550px] h-[360px] mx-10 rounded-lg border border-gray-800 shadow-md">
+          <svg class="w-20 h-10 pt-16 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5v14m8-7h-2m0 0h-2m2 0v2m0-2v-2M3 11h6m-6 4h6m11 4H4c-.55228 0-1-.4477-1-1V6c0-.55228.44772-1 1-1h16c.5523 0 1 .44772 1 1v12c0 .5523-.4477 1-1 1Z" />
+          </svg>
+          <p class="text-2xl font-semibold text-[#EDD6B6] px-8 pt-1">High-Quality Web Design: Exceptional Attention to
+            Detail with Agun.</p>
+          <p class="text-md text-[#EDD6B6] mt-2 px-8">
+            Agun's development services are top-notch. He is able to take complex ideas and turn them into functional,
+            user-friendly websites. His attention to detail and commitment to customer satisfaction are unmatched. I
+            highly recommend Arik for all your web development needs.
+          </p>
+          <div class="flex pt-8 pl-8">
+            <img class="w-14 rounded-full" decoding="async"
+              src="https://framerusercontent.com/images/BMBjxclHTXM8r8oH9PDeDaz7ho.png" alt="">
+            <div>
+              <p class="text-xs text-[#DAC5A7] pt-2 pl-4">Liam Chen<br>Design Solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial end  -->
+
+  <!-- About starts  -->
+  <div class="w-11/12 mx-auto">
+    <!-- About section  -->
+    <section class="pb-32">
+      <div class="flex justify-center  italic font-thin opacity-60 overflow-hidden">
+        <span class="text-4xl md:text-6xl lg:text-7xl my-[10%] text-center">Arik Andersson</span>
+        <img src="https://framerusercontent.com/images/sitQqXXWe18lNYFUMPSXSHcM3A.png?scale-down-to=1024"
+          alt="Hero Image" class=" w-[30%]">
+        <span class="text-4xl md:text-6xl lg:text-7xl my-[10%] text-center">Arik Andersson</span>
+      </div>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center lg:gap-24 justify-between  lg:mt-12  font-extralight overflow-hidden">
+        <p class="text-5xl text-center px-10 py-4">A website that leaves, <br><span class="italic"> a lasting
+            impression!</span></p>
+        <div>
+          <p class="text-xl text-center lg:text-left px-10 mr-8">Hi, I'm Arik Andersson - a freelancer specializing in
+            premium web design, development, and SEO services. I'm passionate about creating unique and effective
+            solutions
+            for my clients, and I bring a personal touch to every project. Let's work together to bring your vision to
+            life!
+          </p>
+          <div class="flex gap-3 ml-10 mt-6 lg:mt-10 justify-center lg:justify-start">
+            <svg
+              class="w-10 h-10 text-white-800 border border-[#EDD6B6] border-opacity-25 rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl p-2"
+              xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+              <path
+                d="M 34.21875 5.46875 C 28.238281 5.46875 23.375 10.332031 23.375 16.3125 C 23.375 16.671875 23.464844 17.023438 23.5 17.375 C 16.105469 16.667969 9.566406 13.105469 5.125 7.65625 C 4.917969 7.394531 4.597656 7.253906 4.261719 7.277344 C 3.929688 7.300781 3.632813 7.492188 3.46875 7.78125 C 2.535156 9.386719 2 11.234375 2 13.21875 C 2 15.621094 2.859375 17.820313 4.1875 19.625 C 3.929688 19.511719 3.648438 19.449219 3.40625 19.3125 C 3.097656 19.148438 2.726563 19.15625 2.425781 19.335938 C 2.125 19.515625 1.941406 19.839844 1.9375 20.1875 L 1.9375 20.3125 C 1.9375 23.996094 3.84375 27.195313 6.65625 29.15625 C 6.625 29.152344 6.59375 29.164063 6.5625 29.15625 C 6.21875 29.097656 5.871094 29.21875 5.640625 29.480469 C 5.410156 29.742188 5.335938 30.105469 5.4375 30.4375 C 6.554688 33.910156 9.40625 36.5625 12.9375 37.53125 C 10.125 39.203125 6.863281 40.1875 3.34375 40.1875 C 2.582031 40.1875 1.851563 40.148438 1.125 40.0625 C 0.65625 40 0.207031 40.273438 0.0507813 40.71875 C -0.109375 41.164063 0.0664063 41.660156 0.46875 41.90625 C 4.980469 44.800781 10.335938 46.5 16.09375 46.5 C 25.425781 46.5 32.746094 42.601563 37.65625 37.03125 C 42.566406 31.460938 45.125 24.226563 45.125 17.46875 C 45.125 17.183594 45.101563 16.90625 45.09375 16.625 C 46.925781 15.222656 48.5625 13.578125 49.84375 11.65625 C 50.097656 11.285156 50.070313 10.789063 49.777344 10.445313 C 49.488281 10.101563 49 9.996094 48.59375 10.1875 C 48.078125 10.417969 47.476563 10.441406 46.9375 10.625 C 47.648438 9.675781 48.257813 8.652344 48.625 7.5 C 48.75 7.105469 48.613281 6.671875 48.289063 6.414063 C 47.964844 6.160156 47.511719 6.128906 47.15625 6.34375 C 45.449219 7.355469 43.558594 8.066406 41.5625 8.5 C 39.625 6.6875 37.074219 5.46875 34.21875 5.46875 Z M 34.21875 7.46875 C 36.769531 7.46875 39.074219 8.558594 40.6875 10.28125 C 40.929688 10.53125 41.285156 10.636719 41.625 10.5625 C 42.929688 10.304688 44.167969 9.925781 45.375 9.4375 C 44.679688 10.375 43.820313 11.175781 42.8125 11.78125 C 42.355469 12.003906 42.140625 12.53125 42.308594 13.011719 C 42.472656 13.488281 42.972656 13.765625 43.46875 13.65625 C 44.46875 13.535156 45.359375 13.128906 46.3125 12.875 C 45.457031 13.800781 44.519531 14.636719 43.5 15.375 C 43.222656 15.578125 43.070313 15.90625 43.09375 16.25 C 43.109375 16.65625 43.125 17.058594 43.125 17.46875 C 43.125 23.71875 40.726563 30.503906 36.15625 35.6875 C 31.585938 40.871094 24.875 44.5 16.09375 44.5 C 12.105469 44.5 8.339844 43.617188 4.9375 42.0625 C 9.15625 41.738281 13.046875 40.246094 16.1875 37.78125 C 16.515625 37.519531 16.644531 37.082031 16.511719 36.683594 C 16.378906 36.285156 16.011719 36.011719 15.59375 36 C 12.296875 35.941406 9.535156 34.023438 8.0625 31.3125 C 8.117188 31.3125 8.164063 31.3125 8.21875 31.3125 C 9.207031 31.3125 10.183594 31.1875 11.09375 30.9375 C 11.53125 30.808594 11.832031 30.402344 11.816406 29.945313 C 11.800781 29.488281 11.476563 29.097656 11.03125 29 C 7.472656 28.28125 4.804688 25.382813 4.1875 21.78125 C 5.195313 22.128906 6.226563 22.402344 7.34375 22.4375 C 7.800781 22.464844 8.214844 22.179688 8.355469 21.746094 C 8.496094 21.3125 8.324219 20.835938 7.9375 20.59375 C 5.5625 19.003906 4 16.296875 4 13.21875 C 4 12.078125 4.296875 11.03125 4.6875 10.03125 C 9.6875 15.519531 16.6875 19.164063 24.59375 19.5625 C 24.90625 19.578125 25.210938 19.449219 25.414063 19.210938 C 25.617188 18.96875 25.695313 18.648438 25.625 18.34375 C 25.472656 17.695313 25.375 17.007813 25.375 16.3125 C 25.375 11.414063 29.320313 7.46875 34.21875 7.46875 Z"
+                fill="white" stroke="white" stroke-width="1"></path>
+            </svg>
+            <svg
+              class="w-10 h-10 text-white-800 border border-[#EDD6B6] border-opacity-25 rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl p-2"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+              viewBox="0 0 24 24">
+              <path fill="currentColor" fill-rule="evenodd"
+                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <svg
+              class="w-10 h-10 text-white-800 border border-[#EDD6B6] border-opacity-25 rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl p-2"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+              viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 5h4.5a3.5 3.5 0 1 1 0 7H8m0-7v7m0-7H6m2 7h6.5a3.5 3.5 0 1 1 0 7H8m0-7v7m0 0H6" />
+            </svg>
+            <svg
+              class="w-10 h-10 text-white-800 border border-[#EDD6B6] border-opacity-25 rounded-full bg-[#EDD6B6] bg-stone-800/50 backdrop-blur-xl p-2"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+              viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+              <path stroke="currentColor" stroke-width="2"
+                d="M12 2a10 10 0 0 1 0 20 10 10 0 0 1 0-20zM2 12h20M12 2v20M4.5 4.5c5 5 15 5 15 15M4.5 19.5c5-5 15-5 15-15"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- About ends  -->
+
+  <!-- Carosul starts  -->
+  <div class=" bg-white/10 backdrop-blur-md py-2">
+    <!-- slide scroll start -->
+    <section>
+      <div class="overflow-hidden w-full ">
+        <div class="flex whitespace-nowrap">
+          <marquee>
+            <span class="text-xl  font-semibold mx-4 px-6 py-3">+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK+++.....LET'S TALK......+++.....LET'S
+              TALK.....+++.....LET'S TALK.....+++.....LET'S TALK</span>
+          </marquee>
+        </div>
+      </div>
 
 
+    </section>
+    <!-- slide scroll end -->
+  </div>
+  <!-- Carosul ends  -->
 
 
-        <!-- Mobile Menu Script -->
-        <script>
-            const hamburgerMenu = document.getElementById('hamburger-menu');
-            const mobileMenu = document.getElementById('mobile-menu');
-            hamburgerMenu.addEventListener('click', () => {
-                mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
-            });
-        </script>
+  <!-- contact us section start -->
+  <section>
+    <div class="container max-w-7xl mx-auto mt-20 ">
+      <div class="">
+        <h1 class="text-xl  font-extralight text-center mb-6">Project in mind?</h1>
+        <div class="flex flex-col text-center ">
+          <span class="text-7xl  font-extralight italic">Let’s make your</span><br>
+          <span class="text-7xl font-extralight  italic mb-6">Website shine</span>
+          <span class="text-xl">Premium web design, development, and SEO</span>
+          <span class="text-xl">services to help your business stand out.</span>
+        </div>
+        <div class="flex justify-center">
+          <a class="border bg-[#edd6b6] rounded-lg px-4 py-2 mt-6 text-black ">
+            <span class="">GET IN TOUCH</span>
+            <i class="fa-solid fa-arrow-right-long m-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact us section end -->
+
+  <!-- footer section start -->
+  <footer class="text-[#edd6b6] py-10  mt-8">
+    <div class="container max-w-7xl mx-auto px-4">
+      <div class="flex flex-wrap justify-between items-center">
+        <!-- Logo -->
+        <div class="mb-4 md:mb-0">
+          <h1 class="text-2xl font-bold">SHARIFUL</h1>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-6 mb-4 md:mb-0">
+          <a href="#" aria-label="Instagram" class="hover:text-gray-400">
+            <i class="fab fa-instagram text-3xl"></i>
+          </a>
+          <a href="#" aria-label="Twitter" class="hover:text-gray-400">
+            <i class="fab fa-twitter text-3xl"></i>
+          </a>
+          <a href="#" aria-label="Dribbble" class="hover:text-gray-400">
+            <i class="fab fa-dribbble text-3xl"></i>
+          </a>
+          <a href="#" aria-label="Behance" class="hover:text-gray-400">
+            <i class="fab fa-behance text-3xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Pages</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">Services</a></li>
+            <li><a href="#" class="hover:text-gray-400">About</a></li>
+            <li><a href="#" class="hover:text-gray-400">Pricing</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">More Templates</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-400">CMS</a></li>
+            <li><a href="#" class="hover:text-gray-400">Work</a></li>
+            <li><a href="#" class="hover:text-gray-400">Work Single</a></li>
+            <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+            <li><a href="#" class="hover:text-gray-400">Blog Single</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Utility Pages</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-400">Styleguide</a></li>
+            <li><a href="#" class="hover:text-gray-400">404 Error Page</a></li>
+            <li><a href="#" class="hover:text-gray-400">Licensing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-8 text-sm text-white">
+      © 2024 SHARIFUL. All rights reserved.
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+ 
+
 </body>
 
 </html>
